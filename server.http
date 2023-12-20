@@ -1,0 +1,18 @@
+###
+GET http://localhost:3005/users 
+###
+GET http://localhost:3005/user/657e87b78a30d91d4741ad9a
+###
+POST http://localhost:3005/create-user
+Content-Type: application/json
+
+{
+    "name": "Ganesh",
+    "score": 165,
+    "matchType": "ODI",
+    "year": 2021,
+    "noOfFours": 16,
+    "noOfSixes": 5
+}
+###
+DELETE http://localhost:3005/delete-user/657e87b78a30d91d4741ad9a
